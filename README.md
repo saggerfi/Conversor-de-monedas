@@ -1,2 +1,2 @@
-# Conversor-de-monedas
+# conversor-de-monedas
 Programa .py para convertir dólares a pesos mexicanos 
