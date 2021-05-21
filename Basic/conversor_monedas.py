@@ -1,3 +1,11 @@
+def conversor(tipo, pesos):
+    dolares = float(input("Dólares USD: "))
+    resultado = dolares * pesos
+    resultado = round(resultado, 2)
+    resultado = str(resultado)
+    print("Tienes $" + resultado + tipo)    
+
+
 menu = """
 Bienvenido al conversor de monedas 💴
 
@@ -10,26 +18,11 @@ Elige una opción: """
 opcion =  int(input(menu))
 
 if opcion == 1:
-    dolares = float(input("Dólares USD: "))
-    pesos = 3718.80
-    resultado = dolares * pesos
-    resultado = round(resultado, 2)
-    resultado = str(resultado)
-    print("Tienes $" + resultado + "COL") 
+    conversor("COL", 3718.80)
 elif opcion == 2:
-    dolares = float(input("Dólares USD: "))
-    pesos = 94.25
-    resultado = dolares * pesos
-    resultado = round(resultado, 2)
-    resultado = str(resultado)
-    print("Tienes $" + resultado + "ARG") 
+    conversor("ARG", 94.25) 
 elif opcion == 3:
-    dolares = float(input("Dólares USD: "))
-    pesos = 19.87
-    resultado = dolares * pesos
-    resultado = round(resultado, 2)
-    resultado = str(resultado)
-    print("Tienes $" + resultado + "MXN") 
+    conversor("MXN", 19.87)
 else:
     print("Muy gracioso, ingresa una opción valida")
 
